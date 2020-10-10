@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorViewBg"
+    tools:context=".gallery_list.GalleryListActivity">
+
+
+    <Button
+        android:id="@+id/button_info"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="22dp"
+        android:background="@android:drawable/ic_menu_info_details"
+        android:backgroundTint="@color/colorAccent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_gallery_list"
+        android:layout_width="match_parent"
+        android:layout_height="602dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="34dp"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+
+    <ProgressBar
+        android:id="@+id/pb_loading"
+        style="@style/Base.Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_filter"
+        android:tint="@color/colorViewBg"
+        app:elevation="3dp"
+        app:fabSize="normal" />
+
+
+    <TextView
+        android:id="@+id/tv_empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawableTop="@drawable/ic_empty_movies"
+        android:drawablePadding="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/no_movies"
+        android:textSize="@dimen/no_result_text_size"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/pt_userId"
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="54686175@N06 185809253@N05" />
+
+    <Button
+        android:id="@+id/button_buscar"
+        android:layout_width="54dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="17dp"
+        android:layout_toStartOf="@+id/button_info"
+        android:background="@android:drawable/ic_menu_search"
+        android:backgroundTint="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/tv_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="5dp"
+        android:onClick="logoutFirebase"
+        android:clickable="true"
+        android:text="Cerrar Sesion"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

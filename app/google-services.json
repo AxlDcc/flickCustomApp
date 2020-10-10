@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "707185108757",
+    "firebase_url": "https://udeoflickr.firebaseio.com",
+    "project_id": "udeoflickr",
+    "storage_bucket": "udeoflickr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:707185108757:android:c0d59a21d2074803e4eb1c",
+        "android_client_info": {
+          "package_name": "com.example.udeoflickr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "707185108757-4e3br4l1n971t08akni9sofr32uj5u02.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.udeoflickr",
+            "certificate_hash": "88e55d6ff5e794d2e99ded5d3bc022ff1765679c"
+          }
+        },
+        {
+          "client_id": "707185108757-vog59bnj51ct3efsp1rtkcfidi8ui2o3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9KDjqtGL73oowv4aI9DBBQe35_eCv9ek"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "707185108757-vog59bnj51ct3efsp1rtkcfidi8ui2o3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
